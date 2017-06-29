@@ -8,23 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		E307755D1EDFBA19008D133E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E307755C1EDFBA19008D133E /* main.cpp */; };
+		E30775651EDFBBA7008D133E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30775641EDFBBA7008D133E /* OpenGL.framework */; };
+		E30775671EDFBC1E008D133E /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E30775661EDFBC1E008D133E /* libglfw.3.2.dylib */; };
+		E30775691EDFBC44008D133E /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E30775681EDFBC44008D133E /* libGLEW.2.0.0.dylib */; };
+		E307756B1EDFBC59008D133E /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E307756A1EDFBC59008D133E /* libassimp.3.3.1.dylib */; };
+		E30775701EDFC988008D133E /* fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = E307756C1EDFBCDF008D133E /* fragment.shader */; };
+		E30775711EDFC98D008D133E /* vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = E307756D1EDFBCF4008D133E /* vertex.shader */; };
+		E3C338481EE3826C00DEF2A4 /* vertex2.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3C338461EE3804A00DEF2A4 /* vertex2.shader */; };
+		E3C338491EE3827100DEF2A4 /* fragment2.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3C338471EE381E400DEF2A4 /* fragment2.shader */; };
+		E3C3384A1EE3827F00DEF2A4 /* shader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3C338451EE37DD000DEF2A4 /* shader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E30775571EDFBA19008D133E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				E3C3384A1EE3827F00DEF2A4 /* shader.h in CopyFiles */,
+				E3C338491EE3827100DEF2A4 /* fragment2.shader in CopyFiles */,
+				E3C338481EE3826C00DEF2A4 /* vertex2.shader in CopyFiles */,
+				E30775711EDFC98D008D133E /* vertex.shader in CopyFiles */,
+				E30775701EDFC988008D133E /* fragment.shader in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E30775591EDFBA19008D133E /* rollerCoaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rollerCoaster; sourceTree = BUILT_PRODUCTS_DIR; };
 		E307755C1EDFBA19008D133E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E30775641EDFBBA7008D133E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E30775661EDFBC1E008D133E /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		E30775681EDFBC44008D133E /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		E307756A1EDFBC59008D133E /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = ../../../../../../../usr/local/Cellar/assimp/3.3.1/lib/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		E307756C1EDFBCDF008D133E /* fragment.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.shader; sourceTree = "<group>"; };
+		E307756D1EDFBCF4008D133E /* vertex.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.shader; sourceTree = "<group>"; };
+		E3277A061EE6A0EC00C5E8F3 /* SOIL2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SOIL2; sourceTree = "<group>"; };
+		E3C338451EE37DD000DEF2A4 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		E3C338461EE3804A00DEF2A4 /* vertex2.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex2.shader; sourceTree = "<group>"; };
+		E3C338471EE381E400DEF2A4 /* fragment2.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment2.shader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +56,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E307756B1EDFBC59008D133E /* libassimp.3.3.1.dylib in Frameworks */,
+				E30775691EDFBC44008D133E /* libGLEW.2.0.0.dylib in Frameworks */,
+				E30775671EDFBC1E008D133E /* libglfw.3.2.dylib in Frameworks */,
+				E30775651EDFBBA7008D133E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +71,7 @@
 			children = (
 				E307755B1EDFBA19008D133E /* rollerCoaster */,
 				E307755A1EDFBA19008D133E /* Products */,
+				E30775631EDFBBA7008D133E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +86,26 @@
 		E307755B1EDFBA19008D133E /* rollerCoaster */ = {
 			isa = PBXGroup;
 			children = (
+				E3277A061EE6A0EC00C5E8F3 /* SOIL2 */,
 				E307755C1EDFBA19008D133E /* main.cpp */,
+				E307756C1EDFBCDF008D133E /* fragment.shader */,
+				E307756D1EDFBCF4008D133E /* vertex.shader */,
+				E3C338451EE37DD000DEF2A4 /* shader.h */,
+				E3C338461EE3804A00DEF2A4 /* vertex2.shader */,
+				E3C338471EE381E400DEF2A4 /* fragment2.shader */,
 			);
 			path = rollerCoaster;
+			sourceTree = "<group>";
+		};
+		E30775631EDFBBA7008D133E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E307756A1EDFBC59008D133E /* libassimp.3.3.1.dylib */,
+				E30775681EDFBC44008D133E /* libGLEW.2.0.0.dylib */,
+				E30775661EDFBC1E008D133E /* libglfw.3.2.dylib */,
+				E30775641EDFBBA7008D133E /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +264,13 @@
 		E30775611EDFBA19008D133E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/assimp/3.3.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +278,13 @@
 		E30775621EDFBA19008D133E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/assimp/3.3.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -248,6 +308,7 @@
 				E30775621EDFBA19008D133E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
